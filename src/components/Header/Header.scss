@@ -1,0 +1,15 @@
+.header {
+	height: auto;
+    padding: 10px 80px;
+    border-bottom: solid 1px #ddd;
+
+	.logo {
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+		padding: 10px 15px;
+	}
+}
