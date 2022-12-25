@@ -5,7 +5,7 @@ import './Header.scss';
 const Header = () => {
   return (
     <div className='header mb-5'>
-      <Link to="/" exact>
+      <Link to="/Game-Shop" exact>
         <img className='logo' src={require('../../logo.jpeg')} />
       </Link>
     </div>

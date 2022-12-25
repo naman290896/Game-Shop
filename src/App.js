@@ -2,15 +2,16 @@ import ProductList from './components/ProductList/ProductList';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductDetail from './components/ProductDetail/ProductDetail';
 import Header from './components/Header/Header';
+import { Navigate } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
+        <Header />
         <div className="container">
           <Routes>
-            <Route path="/" exact element={<ProductList/>} />
-            <Route path="/product/:productId" exact element={<ProductDetail/>} />
+            <Route path="/Game-Shop" exact element={<ProductList />} />
+            <Route path="/product/:productId" exact element={<ProductDetail />} />
           </Routes>
         </div>
       </Router>
